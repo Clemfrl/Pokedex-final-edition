@@ -1,0 +1,86 @@
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="dist/css/min.styles.css">
+          <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@500&display=swap" rel="stylesheet">
+        <title>
+          Pokedex
+        </title>
+        <link rel="short icon" href="img/favicon.png"/>
+      </head>
+      <body>
+         <!-- Preloader -->
+  <div class="preloader">
+    <img class="preloader_img" src="img/pre-load.gif">
+  </div>
+        <div classe="container page-container">
+<!-- Navbar Top -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<img src="img/poke_logo.png" width="90" height="40" class="navbar-brand" alt="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">National Pokédex (disabled)</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+  <section>
+        <header class="header-body">
+          <h1 class="header-title">Pokédex <span style="font-size:16px;">1rst generation</span></h1>
+        </header>
+
+        <div class="pokemon-list">
+
+    <div id="modal-container">
+      <div class="modal" id="pokemon-modal" tabindex="-1" role="dialog" aria-labelledby="pokemon-name" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title text-capitalize" id="pokemon-name"> Pokemon Name</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+              <div class="modal-body">
+
+        <img class="pokemon-img rounded mx-auto d-block" alt="a picture of current pokemon">
+        <div class="pokemon-types"></div>
+        <div class="pokemon-weight"></div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+
+  </section>
+
+      </div>
+        <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          <script src="dist/js/polyfill.js"></script>
+          <script src="dist/js/fetch.umd.js"></script>
+          <script src="dist/js/min.scripts.js"></script>
+
+        </body>
+    </html>
