@@ -78,12 +78,11 @@ function addListItem(pokemon) {
 
 
       $('.close').click(function() {
-          $('.modal-backdrop').remove();
-          $modalContainer.empty();
-          $('body').removeClass('modal-open');
-        });
+        $('.modal-backdrop').remove();
+        $('body').removeClass('modal-open');
+      });
 
-      }
+    }
 
       return {
         add: add,
